@@ -1,0 +1,10 @@
+def nama_fungsi(argument):
+    statement_1
+    …
+    statement_n
+    return returned_value
+
+nama_fungsi adalah nama untuk fungsi yang kita definisikan, memiliki aturan seperti penamaan variabel
+argument adalah variabel masukan ke fungsi, bisa tanpa variabel, satu variabel atau lebih
+statement_1 … statement_n adalah algoritma yang telah kita transfer dalam bahasa Python. Ini merupakan inti dari fungsi yang kita definisikan. Seluruh statement adalah menjorok (indent) ke dalam seperti yang pernah dipelajari pada conditioning dan looping
+return_value adalah variabel output dari fungsi kita. Bisa tanpa variabel, satu variabel, atau lebih.
