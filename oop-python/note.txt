@@ -13,3 +13,9 @@ Python memiliki dua jenis atribut utama dalam sebuah kelas: Class Attribute dan 
 1. Instance Attribute (Atribut Instance)Atribut yang melekat pada setiap objek (instance) yang dibuat dari kelas tersebut. Nilai dari atribut ini bersifat unik dan bisa berbeda-beda untuk setiap objek.Ciri-ciri: Biasanya didefinisikan di dalam method konstruktor __init__() menggunakan kata kunci self.Contoh penggunaan: Jika Anda memiliki kelas Kucing, setiap objek kucing bisa memiliki nama dan umur yang berbeda.
 
 2. Class Attribute (Atribut Kelas)Atribut yang dimiliki dan dibagikan secara bersamaan oleh seluruh objek di dalam kelas tersebut. Jika nilai atribut ini diubah, maka perubahan tersebut akan berlaku untuk semua objek yang dibuat dari kelas tersebut.Ciri-ciri: Didefinisikan di dalam kelas, tepat di bawah baris class, dan tidak menggunakan self.Contoh penggunaan: Jika Anda memiliki kelas Kucing, atribut kaki yang bernilai 4 bisa dijadikan class attribute karena semua kucing memiliki jumlah kaki yang sama.
+
+
+# Inheritance
+Inheritance adalah salah satu mekanisme di konsep OO yang mengizinkan aku untuk mendefinisikan sebuah class baru berdasarkan class yang sebelumnya telah dideklarasikan.
+
+Melalui konsep inheritance, sebuah class baru dapat memiliki atribut dan fungsi pada class yang sebelumnya telah didefinisikan. Pada konsep inheritance, atribut/fungsi yang akan diwariskan hanyalah atribut/fungsi dengan access modifier public, atribut/fungsi dengan access modifier private tidak akan diturunkan.
