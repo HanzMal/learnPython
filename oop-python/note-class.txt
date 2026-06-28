@@ -1,0 +1,7 @@
+Cara Dinamis: Kamu diberi selembar kertas oleh user yang bertuliskan nama lacinya (misal user menulis "surat_tanah" atau "berlian"). Kamu tidak tahu apa yang ditulis user sampai kertas itu dibuka. Di sini, kamu butuh alat (getattr) untuk membaca tulisan di kertas itu, lalu membuka laci yang sesuai secara otomatis.
+
+Bayangkan kamu sedang membuat sistem Odoo atau aplikasi Profile Pengguna. Kamu membuat Class kosong seperti ini:
+class Karyawan:
+    pass
+
+budi = Karyawan()
