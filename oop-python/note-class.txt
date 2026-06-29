@@ -5,3 +5,10 @@ class Karyawan:
     pass
 
 budi = Karyawan()
+
+kalau cuman 1 underscore hanya menunjukkan sebuah peringatan/kesepakatan (konvensi) sosial namun tetap bisa diakses dari luar class
+double underscore di method class python itu untuk menunjukkan bahwa akses method tersebut private dan jangan mengaksesnya dari luar Class
+
+Class Atribute = Atribut yang didefinisikan langsung di dalam badan class (di luar method apa pun). Nilai dari atribut ini dibagi bersama (shared) oleh semua objek/instance yang dibuat dari kelas tersebut. Jika nilainya diubah melalui kelas, semua objek akan ikut berubah.
+
+Instance attribute(Atribut Objek) = Atribut yang didefinisikan di dalam method (biasanya di dalam konstruktor __init__) menggunakan kata kunci self. Atribut ini bersifat unik untuk setiap objek. Perubahan pada satu objek tidak akan memengaruhi objek lainnya.
