@@ -11,12 +11,20 @@ class Wallet:
         return self.__balance
     
     # 2. SETTER: Menyisipkan validasi saat seseorang mencoba mengubah nilai. bisa mengubah value properti langsung
+    # @balance.setter
+    # def balance(self, amount):
+    #     if amount < 0:
+    #         raise ValueError("Saldo tidak boleh negatif!")
+    #     print(f"Log: Saldo berhasil diubah menjadi {amount}")
+    #     self._balance = amount
+    
+    # coba setter nya mengakses self.__balance, bukan self.balance atau self._balance, karena self.balance akan memanggil setter lagi dan menyebabkan rekursi tak terbatas
     @balance.setter
     def balance(self, amount):
         if amount < 0:
             raise ValueError("Saldo tidak boleh negatif!")
         print(f"Log: Saldo berhasil diubah menjadi {amount}")
-        self._balance = amount
+        self.__balance = amount
     
     def deposit(self, amount):
         if amount > 0:
@@ -35,7 +43,16 @@ class Wallet:
 
 account1 = Wallet(500)
 account1.deposit(50)
-# print(account1.get_balance()) # 550
+# print(account1.balance(-100))
+
+# mengubah instance properti langsung dengan setter langsung
+# account1.balance = -1000 #raise error: Saldo tidak boleh negatif!
+# account1.balance = 100 
+# print("saldo account1: ", account1.balance) # tetap 550 karena setter pakai self.balance
+# # sedangkan deposit pakai self.__balance, jadi tidak kena setter
+
+account1.balance = 100 
+print("saldo account1: ", account1.balance) # berubah menjadi 100 karena setter pakai self.__balance, jadi kena setter
 
 acct_two = Wallet(450)
 acct_two.withdraw(28)
